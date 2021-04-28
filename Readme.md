@@ -1,7 +1,7 @@
 # New Jersey Driver License Appointment Tool
 
 # Purpose
-This tool is to help people living in NJ to get a last minute appointment in pandemic. People could only make an appointment months later since the volume limitation at DMV. But some people have to get an license ASAP, however, some people cancel appointments at last minutes and even no show. Both of them have their own reasons. Our purpose is to help people get these wasted appointments.
+This tool is to help people living in NJ to get a last minute appointment in pandemic. People could only make an appointment months later since the volume limitation at DMV. But some people have to get a license ASAP, however, some people cancel appointments at last minutes and even no show. Both of them have their own reasons. The purpose is to help people get these wasted appointments.
 
 # How to use it
 ## install packages
