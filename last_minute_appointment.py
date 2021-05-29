@@ -53,14 +53,15 @@ def play_music():
 url = 'https://telegov.njportal.com/njmvc/AppointmentWizard/11'
 
 
-final_data_time = datetime(year=2021, month=5, day=30, hour=12)
+final_data_time = datetime(year=2021, month=6, day=2, hour=12)
 
 while True:
     soup = get_soup_from_url(url)
+    # script = soup.find('script')
     script = soup.find('script', text=lambda text: text and "var locationData = " in text)
     # parse js
     parser = Parser()
-    tree = parser.parse(script.text)
+    tree = parser.parse(script.string)
     for node in nodevisitor.visit(tree):
         if isinstance(node, ast.VarDecl) and hasattr(node.initializer, 'items'):
             if node.identifier.value == 'locationData':
