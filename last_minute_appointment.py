@@ -50,10 +50,10 @@ def play_music():
     play(music * 5)
 
 
-url = 'https://telegov.njportal.com/njmvc/AppointmentWizard/11'
+url = 'https://telegov.njportal.com/njmvc/AppointmentWizard/17'
 
 
-final_data_time = datetime(year=2021, month=6, day=2, hour=12)
+final_data_time = datetime(year=2021, month=9, day=30, hour=12)
 
 while True:
     soup = get_soup_from_url(url)
@@ -87,4 +87,4 @@ while True:
             print("{} has {} appointments at {}".format(location_dict[id]['Name'], n_appointment, date_time_obj))
             play_music()
     print("not found! continue..")
-    time.sleep(300 + random.randrange(start=0, stop=300))
+    time.sleep(random.randrange(start=0, stop=300))
