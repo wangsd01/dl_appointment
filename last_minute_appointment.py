@@ -59,6 +59,8 @@ while True:
     soup = get_soup_from_url(url)
     # script = soup.find('script')
     script = soup.find('script', text=lambda text: text and "var locationData = " in text)
+    if script is None:
+        continue
     # parse js
     parser = Parser()
     tree = parser.parse(script.string)
