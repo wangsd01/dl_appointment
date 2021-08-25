@@ -60,6 +60,7 @@ while True:
     # script = soup.find('script')
     script = soup.find('script', text=lambda text: text and "var locationData = " in text)
     if script is None:
+        time.sleep(random.randrange(start=0, stop=30))
         continue
     # parse js
     parser = Parser()
