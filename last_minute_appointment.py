@@ -90,4 +90,4 @@ while True:
             print("{} has {} appointments at {}".format(location_dict[id]['Name'], n_appointment, date_time_obj))
             play_music()
     print("not found! continue..")
-    time.sleep(random.randrange(start=0, stop=300))
+    time.sleep(random.randrange(start=0, stop=60))

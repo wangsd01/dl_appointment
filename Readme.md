@@ -10,7 +10,9 @@ This tool is to help people living in NJ to get a last minute appointment in pan
 
 `sudo apt install ffmpeg`
 
-`pip install pydub bs4 slimit`
+`conda install ffmpeg`
+
+`pip install pydub bs4 slimit simpleaudio`
 
 ## set date time before which you want an appointment
 e.g.
