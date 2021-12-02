@@ -4,11 +4,12 @@
 This tool is to help people living in NJ to get a last minute appointment in pandemic. People could only make an appointment months later since the volume limitation at DMV. But some people have to get a license ASAP, however, some people cancel appointments at last minutes and even no show. Both of them have their own reasons. The purpose is to help people get these wasted appointments.
 
 # How to use it
-## install packages
 
-`python3`
+## install anaconda
 
-`sudo apt install ffmpeg`
+## open anaconda prompt
+
+## install following packages
 
 `conda install ffmpeg`
 
