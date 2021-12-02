@@ -16,10 +16,13 @@ https://www.anaconda.com/products/individual
 
 `pip install pydub bs4 slimit simpleaudio`
 
-## set date time before which you want an appointment
+## set date time in the script last_minute_appointment.py
 e.g.
 `final_data_time = datetime(year=2021, month=5, day=30, hour=12)`
 means you want an appointment before 05/30/2021 12pm
+
+## run the script
+'python last_minute_appointment.py 
 
 ## Disclamer:
 Under MIT license. Use it at your own risk.
