@@ -5,7 +5,8 @@ This tool is to help people living in NJ to get a last minute appointment in pan
 
 # How to use it
 
-## install anaconda
+## download and install anaconda
+https://www.anaconda.com/products/individual
 
 ## open anaconda prompt
 
