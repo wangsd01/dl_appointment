@@ -50,10 +50,12 @@ def play_music():
     play(music * 5)
 
 
-url = 'https://telegov.njportal.com/njmvc/AppointmentWizard/17'
+url = 'https://telegov.njportal.com/njmvc/AppointmentWizard/15'
+
+positions = ['Edison', 'South Plainfield', 'Rahway', 'Salem', 'Rio Grande']
 
 
-final_data_time = datetime(year=2021, month=9, day=30, hour=12)
+final_data_time = datetime(year=2022, month=3, day=12, hour=12)
 
 while True:
     soup = get_soup_from_url(url)
@@ -87,7 +89,9 @@ while True:
         n_appointment, next_time = time_dict['FirstOpenSlot'].split(' Appointments Available <br/> Next Available: ')
         date_time_obj = datetime.strptime(next_time, '%m/%d/%Y %I:%M %p')
         if date_time_obj < final_data_time:
-            print("{} has {} appointments at {}".format(location_dict[id]['Name'], n_appointment, date_time_obj))
-            play_music()
+            for position in positions:
+                if position in location_dict[id]['Name']:
+                    print("{} has {} appointments at {}".format(location_dict[id]['Name'], n_appointment, date_time_obj))
+                    play_music()
     print("not found! continue..")
     time.sleep(random.randrange(start=0, stop=60))
